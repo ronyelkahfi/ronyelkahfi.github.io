@@ -1,0 +1,19 @@
+.jumbotron {
+  background-color: #e5ffff;
+  background-image: url("img/front-bg.jpg");
+}
+
+body {
+  min-height: 2000px;
+}
+#project {
+  background-color: #e5ffff;
+}
+.person-name,
+.person-position {
+  color: #fff;
+}
+.text-about {
+  top: 50%;
+  display: block;
+}
