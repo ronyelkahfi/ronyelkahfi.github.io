@@ -1,163 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="style" href="dist/output.css"
-    <title>Curriculum Vitae - Fatkhur Rony</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Curriculum Vitae</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a id="btn-home" class="nav-link active" onclick="moveTo('home')" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a id="btn-about" class="nav-link" onclick="moveTo('about')" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a id="btn-project" class="nav-link" onclick="moveTo('project')" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a id="btn-contact" class="nav-link" onclick="moveTo('contact')" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="jumbotron text-center pt-5 mt-5" id="home">
-      <div class="mt-5"></div>
-      <img src="img/fatkhur-roni1.jpg" width="180" alt="Fatkhur Roni" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4 person-name">Fatkhur Roni</h1>
-      <p class="lead person-position">Software Engineer</p>
-      <a href="https://drive.google.com/file/d/1BfYaheINT4DCiYO3_0HzDSq1wNJZKkSO/view?usp=sharing" class="btn btn-primary btn-lg" target="_blank">Download CV</a>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,224L21.8,192C43.6,160,87,96,131,64C174.5,32,218,32,262,74.7C305.5,117,349,203,393,208C436.4,213,480,139,524,117.3C567.3,96,611,128,655,149.3C698.2,171,742,181,785,165.3C829.1,149,873,107,916,106.7C960,107,1004,149,1047,176C1090.9,203,1135,213,1178,202.7C1221.8,192,1265,160,1309,149.3C1352.7,139,1396,149,1418,154.7L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <section id="about" class="mt-5">
-      <div class="row text-center text-about">
-        <div class="col">
-          <h2>About</h2>
-        </div>
-      </div>
-      <div class="row text-center justify-content-center">
-        <div class="col-md-8">
-          <p>
-            I am a web developer with six years of experience. Work with PHP development environment. From native, to frameworks like Codeigniter and Laravel. I have helped small agencies to transform from traditional administration to
-            integrated database-based administration, and have duplicated it across multiple agencies.
-          </p>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e5ffff"
-          fill-opacity="1"
-          d="M0,256L21.8,213.3C43.6,171,87,85,131,90.7C174.5,96,218,192,262,197.3C305.5,203,349,117,393,101.3C436.4,85,480,139,524,138.7C567.3,139,611,85,655,90.7C698.2,96,742,160,785,165.3C829.1,171,873,117,916,96C960,75,1004,85,1047,85.3C1090.9,85,1135,75,1178,69.3C1221.8,64,1265,64,1309,96C1352.7,128,1396,192,1418,224L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <section id="project">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/projects/1.PNG" class="card-img-top" alt="InAct" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/projects/2.PNG" class="card-img-top" alt="MyBilling" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/projects/5.PNG" class="card-img-top" alt="MyProfit" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/projects/4.jpg" class="card-img-top" alt="Employee Management System" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/projects/5.jpg" class="card-img-top" alt="Hospital Management System" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f3f4f5"
-          fill-opacity="1"
-          d="M0,256L34.3,245.3C68.6,235,137,213,206,218.7C274.3,224,343,256,411,261.3C480,267,549,245,617,202.7C685.7,160,754,96,823,106.7C891.4,117,960,203,1029,208C1097.1,213,1166,139,1234,122.7C1302.9,107,1371,149,1406,170.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Contact</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script type="text/javascript">
-      var buttonNavigation = ["home", "about", "project", "contact"];
-      function moveTo(destination) {
-        $("html,body").animate(
-          {
-            scrollTop: $("#" + destination).offset().top - 200,
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatkhur Roni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/48a99d070e.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
           },
-          500
-        );
-        buttonNavigation.forEach(function (row, index) {
-          if (row != destination) {
-            $("#btn-" + row).removeClass("active");
-          }
-        });
-      }
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Hero Section -->
+    <section
+      class="hero bg-sky-500 bg-cover bg-center h-screen flex justify-center items-center"
+      style="background-image: url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
+    >
+      <div class="hero-body">
+        <div class="container mx-auto">
+          <h1 class="text-gray-900 font-bold text-5xl mb-2 text-center">Fatkhur Roni</h1>
+          <h2 class="text-gray-500 font-semibold text-lg mb-4 text-center">Web Developer</h2>
+          <div class="flex justify-center">
+            <a id="btn-about" href="#about" class="bg-gray-900 text-white font-bold py-2 px-4 rounded-full">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-sky py-8 w-full" id="about">
+      <div class="flex justify-center items-center">
+        <img src="img/rony-1.png" class="rounded-full shadow-md mb-4 w-32 h-32" />
+      </div>
+
+      <div class="px-20 mx-20 text-center">
+        <h3 class="text-gray-900 font-bold text-xl mb-2">About Me</h3>
+        <p class="text-gray-700 mb-8">
+          I am a web developer with seven years of experience. I have helped small agencies to transform from traditional administration to integrated database-based administration, and have duplicated it across multiple agencies. I've also
+          worked for some IT company to develop and maintain their cloud services. As an experienced backend developer, I am seeking a challenging role where I can utilize my skills and knowledge to contribute to the development of robust
+          and scalable applications.
+        </p>
+      </div>
+    </section>
+    <section class="bg-white py-8 flex justify-center items-center">
+      <div class="mt-8">
+        <div class="w-full">
+          <h3 class="text-xl font-bold text-gray-800 text-center">Skills</h3>
+        </div>
+
+        <ul class="grid grid-cols-4 gap-7 mt-4">
+          <li>
+            <div class="flex flex-col items-center mx-10">
+              <i class="fa-brands fa-php text-6xl"></i>
+              <span class="text-gray-600 font-medium">PHP</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-brands fa-js text-6xl"></i>
+              <span class="text-gray-600 font-medium">Javascript</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-brands fa-node-js text-6xl"></i>
+              <span class="text-gray-600 font-medium">NodeJS</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-brands fa-js text-6xl"></i>
+              <span class="text-gray-600 font-medium">Typescript</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center
+            <div class="flex flex-col items-center">
+              <i class="fa-brands fa-laravel text-6xl"></i>
+              <span class="text-gray-600 font-medium">Laravel</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-brands fa-js text-6xl"></i>
+              <span class="text-gray-600 font-medium">NestJS</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-database text-6xl"></i>
+              <span class="text-gray-600 font-medium">MySQL</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-database text-6xl"></i>
+              <span class="text-gray-600 font-medium">PostgreSQL</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="container mx-auto flex py-4">
+        <div class="w-full md:w-2/3 px-4 text-center">
+          <div class="flex flex-wrap -mx-2">
+            <div class="w-full md:w-1/2 px-2">
+              <div class="bg-gray-200 rounded-lg px-4 py-2 mb-4">
+                <h4 class="text-gray-900 font-bold mb-2">Web Development</h4>
+                <ul class="text-gray-700 list-disc pl-4">
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-2">
+              <div class="bg-gray-200 rounded-lg px-4 py-2 mb-4">
+                <h4 class="text-gray-900 font-bold mb-2">Design</h4>
+                <ul class="text-gray-700 list-disc pl-4">
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator</li>
+                  <li>Sketch</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-gray-100 py-8">
+      <div class="container mx-auto">
+        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center">Portfolio</h3>
+        <div class="flex flex -wrap flex-col sm:flex-row justify-center">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg my-2 mx-4">
+            <img class="w-full" src="https://via.placeholder.com/350x150" alt="Portfolio Image" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Project Title</div>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum mauris id nulla tempor, vel facilisis massa pellentesque.</p>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg my-2 mx-4">
+            <img class="w-full" src="https://via.placeholder.com/350x150" alt="Portfolio Image" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Project Title</div>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum mauris id nulla tempor, vel facilisis massa pellentesque.</p>
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg my-2 mx-4">
+            <img class="w-full" src="https://via.placeholder.com/350x150" alt="Portfolio Image" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Project Title</div>
+              <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum mauris id nulla tempor, vel facilisis massa pellentesque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-900 py-8">
+      <div class="container mx-auto px-4">
+        <h3 class="text-white font-bold text-xl mb-2 text-center">Contact Me</h3>
+        <form class="w-full max-w-lg mx-auto pt-8">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="grid-first-name"> First Name </label>
+              <input class="appearance-none block w-full bg-gray-100 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="John" />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="grid-last-name"> Last Name </label>
+              <input
+                class="appearance-none block w-full bg-gray-100 text-gray-900 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="grid-email"> Email </label>
+              <input
+                class="appearance-none block w-full bg-gray-100 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-email"
+                type="email"
+                placeholder="johndoe@example.com"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="grid-message"> Message </label>
+              <textarea
+                class="appearance-none block w-full bg-gray-100 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-message"
+                rows="6"
+                placeholder="Enter your message here"
+              ></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <button class="shadow bg-teal-500 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">Send</button>
+            </div>
+            <div class="md:w-2/3"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4">
+            <div class="text-center text-white">
+              <span class="block mb-2">&copy; 2023 Fatkhur Roni. All Rights Reserved.</span>
+              <a class="text-gray-400 hover:text-gray-300" href="#">Terms of Use</a>
+              <span class="text-gray-400 mx-2">/</span>
+              <a class="text-gray-400 hover:text-gray-300" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
     </script>
   </body>
 </html>
